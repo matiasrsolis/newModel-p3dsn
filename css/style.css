@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Vollkorn:ital,wght@0,500;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #313A7D;
+    outline: none;
+}
+
+.bgBlue{
+    background-color: #313A7D;
+}
+
+.bgViolet{
+    background-color: #E4E6FF;
+}
+
+.bgGrey{
+    background-color: #E7E8F1;
+}
+
+.bgRed{
+    background-color: #B00000;
+}
+
+.bgWhite{
+    background-color: #ffffff;
+}
+
+.fontBlue{
+    color: #313A7D;
+}
+
+.fontRed{
+    color: #B00000
+}
+
+.fontWhite{
+    color: #ffffff;
+}
+
+.vollkorn{
+    font-family: 'Vollkorn', serif;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.medium{
+    font-weight: 500;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.normal{
+    font-style: normal;
+}
+
+.spacing{
+    letter-spacing: 1px;
+}
+
+.spacing150{
+    letter-spacing: 2.5px;
+}
+
+.parrafo{
+    font-size: 1em;
+    line-height: 1.81em;
+}
+
+.heading48{
+    font-size: 1.25em;
+}
+
+.heading36{
+    font-size: 1.25em;
+}
+
+.heading24{
+    font-size: 1.25em;
+}
+
+.btnRedBlue{
+    display: block;
+    border: solid 2px #B00000;
+    color: #313A7D;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.2em 1.18em;
+    font-size: 1em;
+    border-radius: 1.5em;
+    background-color: #ffffff;
+    margin: auto;
+    width: fit-content;
+    transition: all .5s ease;
+}
+
+.btnRedBlue:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B00000;
+    transition: all .2s ease;
+}
+
+.mayuscula{
+    text-transform: uppercase;
+}
+
+.marginWidth{
+    width: 100%;
+    padding: 0 1.875em;
+    max-width: 67em;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.blockFlex{
+    display: block
+}
+
+body{
+    background-color: #F9F9FA;
+}
+
+header{
+    z-index: 9999;
+    position: relative;
+}
+
+.headerBox{
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.headerBox #logo{
+    width: 8em;
+}
+
+.headerBox nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBox ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.headerBox ul li a{
+    display: block;
+    color: #ffffff;
+}
+
+.headerBox .navSuperior li a{
+    text-transform: uppercase;
+}
+
+.headerBox ul li a:hover{
+    color: #E4E6FF;
+    text-decoration: none;
+}
+
+header .escudo{
+    position: absolute;
+    top: 1em;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header .escudo img{
+    margin: auto;
+    display: block;
+    width: 4.9em;
+}
+
+.outlineNone{
+    outline: none;
+}
+
+button:not(:disabled){
+    outline: none;
+}
+
+
+/*-Welcome-*/
+#welcome{
+    padding: 3em 0
+}
+
+#welcome .welcomeTitulo{
+    width: content-fit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.7em;
+}
+
+#welcome .welcomeTitulo h2{
+    text-align: center;
+    max-width: 19em;
+    line-height: 43px;
+}
+
+#welcome .welcomeTitulo .separador{
+    border-bottom: 2px solid #B00000;
+    width: 10.3em;
+    margin-top: 1.8em;
+}
+
+#welcome .niveles{
+    justify-content: space-between;
+}
+
+#welcome .niveles>a{
+    display: block;
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#welcome .niveles figure{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 17.8em;
+}
+
+#welcome .niveles figure::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 29, 73, 0.6);
+    z-index: 10;
+}
+
+#welcome .niveles figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#welcome .niveles figure:hover img{
+    width: 110%;
+    height: 110%;
+    transition: all .5s ease;
+    left: -5%;
+    top: -5%;
+    
+}
+
+#welcome .niveles .nivelInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+    max-width: 25em;
+    padding: 2.5em 3em;
+}
+
+#welcome .niveles .nivelInfo .nivelTitulo{
+    width: fit-content;
+}
+
+#welcome .niveles .nivelInfo p{
+    margin: 0;
+}
+
+#welcome .niveles .nivelInfo>div .subrayado{
+    width: 60%;
+    border-bottom: 2px solid #B00000;
+    transition: all .3s ease;
+}
+
+#welcome .niveles figure:hover .nivelInfo>div .subrayado{
+    width: 100%;
+}
+
+
+/*---------------------------------------------MediaQueries---------------------------------------------*/
+
+/*-Tablet-*/
+@media(min-width: 48em){
+    .heading36{
+        font-size: 2.25em;
+    }
+    
+    /*-Welcome-*/
+    #welcome .niveles figure{
+        height: 30em;
+    }
+}
+
+/*-Laptop-*/
+@media(min-width: 992px){
+    .headerBox ul{
+        flex-direction: row;
+        width: auto
+    }
+    
+    .headerBox nav{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    
+    .marginWidth{
+        padding: 0 0em;
+    }
+    
+    .blockFlex{
+        display: flex
+    }
+    
+    /*-Welcome-*/
+    #welcome .niveles>a{
+        width: 49%;
+    }
+    
+}
+
+/*-Desktop-*/
+@media(min-width: 93.75em){
+    .parrafo{
+        font-size: 1.125em;
+        line-height: 1.81em;
+    }
+    
+    .heading48{
+        font-size: 3em;
+    }
+    
+    .heading36{
+        font-size: 2.25em;
+    }
+    
+    .heading24{
+        font-size: 1.5em;
+    }
+    
+    
+}
