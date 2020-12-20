@@ -94,6 +94,18 @@
     font-size: 1.25em;
 }
 
+.center{
+    text-align: center;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.textDeco{
+    text-decoration: none
+}
+
 .btnRedBlue{
     display: block;
     border: solid 2px #B00000;
@@ -145,7 +157,10 @@ body{
 
 header{
     z-index: 9999;
-    position: relative;
+    position: fixed!important;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .headerBox{
@@ -210,13 +225,27 @@ button:not(:disabled){
     outline: none;
 }
 
+main{
+    margin-top: 6em;
+}
 
 /*-Welcome-*/
 #welcome{
     padding: 3em 0
 }
 
-#welcome .welcomeTitulo{
+#welcome .txtWelc{
+    text-align: center;
+}
+
+#welcome .enlacePlus>a{
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.seccionTitulo{
     width: content-fit;
     display: flex;
     flex-direction: column;
@@ -224,13 +253,13 @@ button:not(:disabled){
     margin-bottom: 2.7em;
 }
 
-#welcome .welcomeTitulo h2{
+.seccionTitulo h2{
     text-align: center;
     max-width: 19em;
     line-height: 43px;
 }
 
-#welcome .welcomeTitulo .separador{
+.seccionTitulo .separador{
     border-bottom: 2px solid #B00000;
     width: 10.3em;
     margin-top: 1.8em;
@@ -238,6 +267,7 @@ button:not(:disabled){
 
 #welcome .niveles{
     justify-content: space-between;
+    margin-top: 2em;
 }
 
 #welcome .niveles>a{
@@ -320,17 +350,198 @@ button:not(:disabled){
 }
 
 
+
+/*-Propuesta-*/
+#propuesta{
+    
+}
+
+#propuesta .asignaturas ul{
+    margin: 0;
+    padding: 0;
+}
+
+#propuesta .asignaturas ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#propuesta .asignaturas ul li{
+    width: 100%;
+}
+
+#propuesta .asignaturas ul li>a{
+    display: block;
+    position: relative;
+}
+
+#propuesta .asignaturas ul li>a figure{
+    /*height: 17.18em;*/
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0
+}
+
+#propuesta .asignaturas ul li>a figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo{
+    color: #ffffff;
+    background-color: rgba(49, 58, 125, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 3em;
+    transition: all .6s ease;
+    opacity: 0
+}
+
+#propuesta .asignaturas ul li>a figure>h3{
+    text-align: center;
+    position: absolute;  
+    width: 100%;
+    padding: 1em;
+    transition: all 1.2s ease;
+    line-height: 1.5em
+}
+
+#propuesta .asignaturas ul li>a figure:hover>h3{
+    display: none;
+    transition: all 3s ease;
+    
+}
+
+#propuesta .asignaturas ul li>a figure:hover .propInfo{
+    /*left: 0%;*/
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo h3{
+    margin-bottom: .7em;
+    text-align: center;
+    line-height: 1.5em
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo p{
+    text-align: center;
+    margin-bottom: 1.7em
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo span{
+    display: flex;
+    align-items: center;
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo span i{
+    margin-right: .35em;
+}
+
+
+/*-PracTICas-*/
+#practicas{
+    padding: 0
+}
+
+#practicas>div.seccionTitulo .separador{
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #313A7D
+}
+
+#practicas .blogItems>ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column
+}
+
+#practicas .blogItems>ul li.items{
+    width: 100%;
+}
+
+#practicas .blogItems>ul li.items .enlace{
+    align-items: center
+}
+
+#practicas .blogItems>ul li.items>a{
+    display: block;
+}
+
+#practicas .blogItems>ul li.items figure{
+    max-height: 22em;
+    overflow: hidden;
+}
+
+#practicas .blogItems>ul li.items figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#practicas .blogItems>ul li.items .enlace .lineaAzul{
+    border-bottom: solid 2px #313A7D;
+    height: 50%;
+    width: 2.4em;
+    margin-right: 1em;
+    transition: all .3s ease;
+}
+
+#practicas .blogItems>ul li.items:hover .enlace .lineaAzul{
+    width: 3.4em;
+    transition: all .3s ease;
+}
+
+
+
+
+
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
 /*-Tablet-*/
 @media(min-width: 48em){
+    .heading48{
+        font-size: 3em;
+    }
+    
     .heading36{
         font-size: 2.25em;
+    }
+    
+    .heading24{
+        font-size: 1.5em;
+    }
+    
+    .parrafo{
+        font-size: 1.125em;
+        line-height: 1.81em;
     }
     
     /*-Welcome-*/
     #welcome .niveles figure{
         height: 30em;
+    }
+    
+    /*-Propuesta-*/
+    #propuesta .asignaturas ul{
+        flex-direction: row;
+    }
+    
+    #propuesta .asignaturas ul li{
+        width: 50%;
     }
 }
 
@@ -360,26 +571,43 @@ button:not(:disabled){
         width: 49%;
     }
     
+    /*-Propuesta-*/
+    #propuesta .asignaturas>ul li>a figure{
+        height: 27em;
+    }
+    
+    #propuesta .asignaturas>ul li{
+        width: 33.3%;
+    }
+    
+    #propuesta .asignaturas>ul li>a figure{
+        min-height: 25em;
+    }
+    
+    
+    /*-PracTICas-*/
+    #practicas .blogItems>ul{
+        justify-content: space-between;
+        flex-direction: row
+    }
+    
+    #practicas .blogItems>ul li.items{
+        width: 31.85%;
+    }
+    
+    #practicas .blogItems>ul li.items figure{
+        height: 18em;
+        overflow: hidden;
+    }
+    
 }
 
 /*-Desktop-*/
 @media(min-width: 93.75em){
-    .parrafo{
+    #propuesta .asignaturas ul li>a figure .propInfo p{
         font-size: 1.125em;
-        line-height: 1.81em;
     }
     
-    .heading48{
-        font-size: 3em;
-    }
-    
-    .heading36{
-        font-size: 2.25em;
-    }
-    
-    .heading24{
-        font-size: 1.5em;
-    }
     
     
 }
