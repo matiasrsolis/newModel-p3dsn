@@ -463,7 +463,7 @@ main{
 }
 
 #practicas .blogItems>ul{
-    padding: 0;
+    padding: 0 1.5em;
     margin: 0;
     display: flex;
     flex-direction: column
@@ -505,6 +505,34 @@ main{
     transition: all .3s ease;
 }
 
+#practicas ul.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#practicas .blogItems>ul li.items ul li.tags ul li{
+    padding: 0;
+    padding-left: .4em
+}
+
+#practicas .blogItems>ul li.items ul li.tags ul li:not(:last-child){
+    border-right: solid 1px #ffffff;
+    padding-right: .4em;
+}
+
+#practicas .blogItems>ul li.items ul li.tags ul li span{
+    font-size: 0.75em;
+    display: block;
+}
+
+#practicas .blogItems>ul li.items .bgBlue{
+    padding: .3em .5em;
+}
+
+#practicas .blogItems>ul li.items .bgBlue .fecha{
+    font-size: .875em;
+}
+
 
 
 
@@ -543,7 +571,11 @@ main{
     #propuesta .asignaturas ul li{
         width: 50%;
     }
-}
+    
+    /*-PracTICas-*/
+    #practicas .blogItems>ul{
+        padding: 0 70px;
+    }
 
 /*-Laptop-*/
 @media(min-width: 992px){
@@ -596,7 +628,7 @@ main{
     }
     
     #practicas .blogItems>ul li.items figure{
-        height: 18em;
+        max-height: 18em;
         overflow: hidden;
     }
     
