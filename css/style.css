@@ -161,6 +161,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
+    padding: 1em;
 }
 
 .headerBox{
@@ -193,6 +194,7 @@ header{
 
 .headerBox .navSuperior li a{
     text-transform: uppercase;
+    font-size: 14px
 }
 
 .headerBox ul li a:hover{
@@ -215,6 +217,59 @@ header .escudo img{
     margin: auto;
     display: block;
     width: 4.9em;
+}
+
+#isologo{
+    display: none;
+    width: 11em;
+}
+
+.carousel-item{
+    position: relative;
+    height: 65vh;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item .slideTxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3.5em;
+}
+
+.carousel-item .slideTxt h1,
+.carousel-item .slideTxt h2{
+    font-size: 2.2em
+}
+
+.carousel-item .slideTxt h1,
+.carousel-item .slideTxt h2,
+.carousel-item .slideTxt p{
+    color: #ffffff;
+    text-align: center;
+    max-width: 989px;
+}
+
+.carousel-item .slideTxt p{
+    margin-top: 1em
+}
+
+.carousel-item .slideTxt .separador{
+    border-bottom: solid 3px #B00000;
+    width: 9em;
+    margin-top: 2em
 }
 
 .outlineNone{
@@ -576,6 +631,7 @@ main{
     #practicas .blogItems>ul{
         padding: 0 70px;
     }
+}
 
 /*-Laptop-*/
 @media(min-width: 992px){
@@ -588,6 +644,15 @@ main{
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-end;
+    }
+    
+    header .escudo img{
+        margin: 0;
+        width: 7em;
+    }
+    
+    .headerBox .navSuperior li a.nav-link{
+        padding: .5rem .8rem;
     }
     
     .marginWidth{
@@ -632,6 +697,23 @@ main{
         overflow: hidden;
     }
     
+    .carousel-item .slideTxt h1,
+    .carousel-item .slideTxt h2{
+        font-size: 4.125em;
+    }
+    
+    .carousel-item .slideTxt p{
+        font-size: 1.5em;
+        margin-top: 0
+    }
+    
+}
+
+@media(min-width: 1200px){
+    header .escudo img{
+        margin: auto;
+        width: 7em;
+    }
 }
 
 /*-Desktop-*/
@@ -640,6 +722,12 @@ main{
         font-size: 1.125em;
     }
     
+    .headerBox .navSuperior li a{
+        font-size: 1.125em;
+    }
     
+    header .escudo img{
+        width: 10em;
+    }
     
 }
