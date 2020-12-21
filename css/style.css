@@ -83,11 +83,11 @@
 }
 
 .heading48{
-    font-size: 1.25em;
+    font-size: 2em;
 }
 
 .heading36{
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .heading24{
@@ -100,6 +100,10 @@
 
 ul{
     padding-left: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .textDeco{
@@ -293,11 +297,15 @@ main{
     text-align: center;
 }
 
-#welcome .enlacePlus>a{
+.enlacePlus>a{
     text-decoration: none;
     display: flex;
     width: fit-content;
     margin: auto;
+}
+
+#welcome .enlacePlus p{
+    max-width: 200px;
 }
 
 .seccionTitulo{
@@ -311,7 +319,6 @@ main{
 .seccionTitulo h2{
     text-align: center;
     max-width: 19em;
-    line-height: 43px;
 }
 
 .seccionTitulo .separador{
@@ -589,6 +596,88 @@ main{
 }
 
 
+/*-section Novedades-*/
+#novedades .tituloNovedades{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+#novedades .tituloNovedades h2{
+    width: fit-content;
+    margin-bottom: 0
+}
+
+#novedades .tituloNovedades .redLine{
+    border-bottom: 2px solid #B00000;
+    width: 100%;
+    position: relative;
+    bottom: 8px;
+    margin-left: 1em;
+}
+
+#novedades .portal ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#novedades .portal ul li{
+    width: 100%;
+    margin-bottom: 2em;
+    transition: all .2s ease;
+    border: solid 2px #313A7D;
+}
+
+#novedades .portal ul li>a{
+    display: flex;
+    flex-direction: column;
+}
+
+#novedades .portal ul li:hover{
+    box-shadow: 1.5px 1.5px 1px #313A7D;
+    transition: all .2s ease;
+}
+
+#novedades .portal ul li .titular{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+#novedades .portal ul li .titular .enlacePlus{
+    margin: inherit;
+    display: flex;
+    width: fit-content;
+    font-size: 1.125em;
+}
+
+#novedades .portal ul li .titular .enlacePlus p{
+    margin-bottom: 0
+}
+
+#novedades .portal ul li>a figure{
+    display: none;
+    overflow: hidden;
+    margin: 0;
+    height: 17em;
+}
+
+#novedades .portal ul li>a figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#novedades .portal ul li:first-child figure,
+#novedades .portal ul li:nth-child(2) figure{
+    display: block;
+}
+
+#novedades .verTodas{
+    padding-top: 1em;
+}
 
 
 
@@ -629,7 +718,7 @@ main{
     
     /*-PracTICas-*/
     #practicas .blogItems>ul{
-        padding: 0 70px;
+        padding: 0 1.875em;
     }
 }
 
@@ -656,16 +745,24 @@ main{
     }
     
     .marginWidth{
-        padding: 0 0em;
+        padding: 0 1.875em;
     }
     
     .blockFlex{
         display: flex
     }
     
+    .seccionTitulo h2{
+        line-height: 43px;
+    }
+    
     /*-Welcome-*/
     #welcome .niveles>a{
         width: 49%;
+    }
+    
+    #welcome .enlacePlus p{
+        max-width: inherit;
     }
     
     /*-Propuesta-*/
@@ -680,7 +777,6 @@ main{
     #propuesta .asignaturas>ul li>a figure{
         min-height: 25em;
     }
-    
     
     /*-PracTICas-*/
     #practicas .blogItems>ul{
@@ -707,12 +803,46 @@ main{
         margin-top: 0
     }
     
+    
+    /*-section Novedades-*/
+    #novedades .portal ul{
+        flex-direction: row;
+    }
+    
+    #novedades .portal ul li{
+        margin-bottom: 0;
+        width: 32%;
+    }
+    
+    #novedades .portal ul li:first-child,
+    #novedades .portal ul li:nth-child(2){
+        width: 49%;
+        margin-bottom: 2em;
+    }
+    
+    #novedades .portal ul li>a{
+        flex-direction: row;
+    }
+    
+    #novedades .portal ul li>a figure{
+        width: 100%;
+        height: 21em;
+    }
+    
+    #novedades .verTodas{
+        padding-top: 5em;
+    }
+    
 }
 
 @media(min-width: 1200px){
     header .escudo img{
         margin: auto;
         width: 7em;
+    }
+    
+    .marginWidth{
+        padding: 0 0em;
     }
 }
 
