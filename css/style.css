@@ -717,6 +717,47 @@ main{
 }
 
 
+/*-Footer-*/
+footer nav{
+    display: none
+}
+
+.footerBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .copyright{
+    border-top: 2px solid #B00000;
+    margin-top: 2em;
+    padding: .5em 0 0 0;
+}
+
+.btn-top{
+    width: fit-content;
+    position: fixed;
+    bottom: 3em;
+    right: 4.3em;
+    background-color: #ffffff;
+}
+
+.btn-top a{
+    padding: .4em;
+    display: block;
+    border: solid 2px #B00000;
+}
+
+.btn-top:hover a{
+    border: solid 3px #B00000;
+}
+
+.btn-top i{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: 700
+}
+
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
@@ -894,11 +935,28 @@ main{
     
     .instList ul>div li{
         margin: 0 1em 1.5em;
+        display: flex;
+        align-items: center
     }
     
     .instList img{
         max-height: 3.5em;
         display: block;
+    }
+    
+    
+    /*-Footer-*/
+    footer nav{
+        display: flex
+    }
+    
+    footer nav ul{
+        margin-left: 5em
+    }
+    
+    footer nav ul li a{
+        display: block;
+        margin-bottom: 1em;
     }
     
 }
