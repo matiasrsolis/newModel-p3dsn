@@ -215,12 +215,17 @@ header .escudo{
     right: 0;
     bottom: 0;
     margin: auto;
+    margin-top: 1em;
 }
 
 header .escudo img{
     margin: auto;
     display: block;
     width: 4.9em;
+}
+
+.activeLink{
+    border-bottom: 3px solid #B00000
 }
 
 #isologo{
@@ -325,6 +330,18 @@ main{
     border-bottom: 2px solid #B00000;
     width: 10.3em;
     margin-top: 1.8em;
+}
+
+#aniversario{
+    padding: 2em 1.875em;
+    background-color: #ffffff;
+}
+
+#aniversario img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 66em
 }
 
 #welcome .niveles{
@@ -604,15 +621,15 @@ main{
 
 #novedades .tituloNovedades h2{
     width: fit-content;
-    margin-bottom: 0
+    margin-bottom: 0;
+    margin-right: .3em;
 }
 
-#novedades .tituloNovedades .redLine{
+.redLine{
     border-bottom: 2px solid #B00000;
     width: 100%;
     position: relative;
     bottom: 8px;
-    margin-left: 1em;
 }
 
 #novedades .portal ul{
@@ -737,7 +754,7 @@ footer .copyright{
     width: fit-content;
     position: fixed;
     bottom: 3em;
-    right: 4.3em;
+    right: 2em;
     background-color: #ffffff;
 }
 
@@ -758,6 +775,116 @@ footer .copyright{
     font-weight: 700
 }
 
+footer .datos img{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+
+/*-Institucional-*/
+.portadaPage{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.portadaPage h1{
+    text-align: center;
+}
+
+.institucional .backPortada{
+    background-image: url(../img/institucional.jpg);
+}
+
+.migaPan{
+    margin: 0 1.875em;
+    padding: 1em 0;
+}
+
+.migaPan ul{
+    align-items: center;
+}
+
+.migaPan ul li a{
+    color: #313A7D;
+    display: block;
+}
+
+.migaPan ul li{
+    font-size: .875em;
+    margin-right: .5em;
+}
+
+.mainComponent .subtitlePage{
+    margin-bottom: 1em;
+}
+
+.mainComponent .subtitlePage .redLine{
+    width: 3em;
+}
+
+.mainComponent .subtitlePage h2{
+    margin-left: .3em;
+}
+
+.bajada{
+   font-weight: 500 
+}
+
+.listParrafo{
+    padding-left: 1.8em
+}
+
+.listParrafo li{
+    list-style: square;
+}
+
+.listParrafo li::marker{
+    color: #B00000;
+    font-size: 1.5em;
+    margin-right: 1em
+}
+
+.listParrafo li p{
+    margin-left: 1em;
+}
+
+article p{
+    font-size: 1em;
+    line-height: 1.81em;
+}
+
+article>section:first-child{
+    margin-top: 0
+}
+
+article>section{
+    margin-top: 4em;
+}
+
+.institucionalSections{
+    margin-top: 3em;
+}
+
+.institucionalSections li a{
+    display: block;
+    border-bottom: solid 1px #313A7D;
+    padding: 1em 0 .5em;
+}
+
+.institucionalSections li .redLine{
+    width: 2em;
+    margin-right: .5em;
+    transition: all .5s ease
+}
+
+.institucionalSections li:hover .redLine{
+    width: 2.68em;
+    transition: all .5s ease
+}
+
+.institucionalSections li .active{
+    font-weight: 700;
+}
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
@@ -780,6 +907,16 @@ footer .copyright{
         line-height: 1.81em;
     }
     
+    article p{
+        font-size: 1.125em;
+        line-height: 1.81em;
+    }
+    
+    header .escudo img{
+        margin: auto;
+        width: 9em;
+    }
+    
     /*-Welcome-*/
     #welcome .niveles figure{
         height: 30em;
@@ -798,6 +935,50 @@ footer .copyright{
     #practicas .blogItems>ul{
         padding: 0 1.875em;
     }
+    
+    /*-Institucional-*/
+    .portadaPage{
+        padding-top: 6em;
+        padding-bottom: 2em;
+    }
+    
+    .institucional .backPortada{
+        background-image: url(../img/institucional.jpg);
+    }
+    
+    .migaPan{
+        margin: 0 1.875em;
+        padding: 1em 0;
+    }
+    
+    .migaPan ul li a{
+        color: #313A7D;
+        display: block;
+    }
+    
+    article>section{
+        margin-top: 5em;
+    }
+    
+    .mainComponent{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .mainComponent article{
+        width: 65%;
+        padding-right: 2em;
+    }
+    
+    .mainComponent aside{
+        width: 33%;
+    }
+    
+    .institucionalSections{
+        margin-top: 0;
+        position: sticky;
+        top: 10em;
+    }
 }
 
 /*-Laptop-*/
@@ -815,7 +996,13 @@ footer .copyright{
     
     header .escudo img{
         margin: 0;
+        margin-left: 2em;
         width: 7em;
+    }
+    
+    .headerBox #logo{
+        margin-left: 9em;
+        width: 12em;
     }
     
     .headerBox .navSuperior li a.nav-link{
@@ -959,16 +1146,27 @@ footer .copyright{
         margin-bottom: 1em;
     }
     
+    .btn-top{
+        right: 4.3em;
+    }
+    
+    
+    
 }
 
 @media(min-width: 1200px){
+    
+    .marginWidth{
+        padding: 0 0em;
+    }
+    
     header .escudo img{
         margin: auto;
         width: 7em;
     }
     
-    .marginWidth{
-        padding: 0 0em;
+    .headerBox #logo{
+        margin-left: 0em;
     }
 }
 
@@ -978,12 +1176,17 @@ footer .copyright{
         font-size: 1.125em;
     }
     
+    #aniversario{
+        padding: 3em 0;
+        background-color: #ffffff;
+    }
+    
     .headerBox .navSuperior li a{
         font-size: 1.125em;
     }
     
     header .escudo img{
-        width: 10em;
+        width: 11em;
     }
     
     .instList img{
@@ -994,6 +1197,12 @@ footer .copyright{
     
     .instList ul>div li{
         margin: 0 1.3em 2em;
+    }
+    
+    /*-Institucional-*/
+    .portadaPage{
+        padding-top: 11em;
+        padding-bottom: 2em;
     }
     
 }

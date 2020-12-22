@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <header class="bgBlue fontWhite spacing navbar navbar-expand-lg">
         <div class="headerBox container-fluid">
            <a href="index.html">
@@ -29,7 +28,7 @@
             </button>
             <nav class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navSuperior">
-                    <li class="nav-item"><a class="nav-link" href="index.html" class="fontWhite mayuscula spacing">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link activeLink" href="index.html" class="fontWhite mayuscula spacing">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="institucional.html" class="fontWhite mayuscula spacing">Institucional</a></li>
                     <li class="nav-item"><a class="nav-link" href="inicial.html" class="fontWhite mayuscula spacing">Inicial</a></li>
                     <li class="nav-item"><a class="nav-link" href="primaria.html" class="fontWhite mayuscula spacing">Primaria</a></li>
@@ -47,7 +46,6 @@
             <img src="img/escudo.png" alt="escudo New Model School">
         </div>
     </header>
-    
     <main id="inicio">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -84,8 +82,11 @@
           </a>
         </div>
         
-        <div id="aniversario" class="marginWidth">
-            
+        <div id="aniversario">
+           <picture>
+               <source media="(max-width: 600px)" srcset="img/aniversariomobile.png">
+               <img src="img/aniversario.png" alt="33 Aniversario">
+           </picture>
         </div>
         
         <section id="welcome">
