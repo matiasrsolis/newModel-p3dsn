@@ -139,7 +139,7 @@ a {
 .marginWidth{
     width: 100%;
     padding: 0 1.875em;
-    max-width: 67em;
+    max-width: 73em;
     margin: auto;
 }
 
@@ -797,7 +797,7 @@ footer .datos img{
 }
 
 .migaPan{
-    margin: 0 1.875em;
+    margin: 0 1.875em 1em;
     padding: 1em 0;
 }
 
@@ -897,6 +897,7 @@ article>section{
 .primario .mainComponent p{
     max-width: 42em;
     margin: auto;
+    margin-bottom: 1.5em
 }
 
 .informativo .mainComponent{
@@ -936,6 +937,70 @@ article>section{
     margin-left: auto
 }
 
+.txtArticle{
+    padding: 3em 0;
+}
+
+.informativo .txtArticle{
+    padding-top: 0em;
+}
+
+.itemsAsignatura{
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+.itemsAsignatura ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.itemsAsignatura ul li{
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border: solid 1px #313A7D;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em
+}
+
+.itemsAsignatura ul li figure{
+    margin-left: -4em;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.itemsAsignatura ul li figure:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 29, 73, 0.5);
+}
+
+.itemsAsignatura ul li p{
+    margin-bottom: 0!important;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.itemsAsignatura p span{
+    font-weight: 700;
+}
+
+.informativo article{
+    padding-bottom: 9em;
+}
+
+.mainComponent .btnRedBlue{
+    font-size: 1.125em;
+}
 
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
@@ -1030,6 +1095,14 @@ article>section{
         margin-top: 0;
         position: sticky;
         top: 10em;
+    }
+    
+    .itemsAsignatura ul li{
+        flex-direction: row
+    }
+    
+    .itemsAsignatura ul li p{
+        padding-left: 2em;
     }
 }
 
@@ -1206,8 +1279,23 @@ article>section{
         right: 4.3em;
     }
     
+    .itemsAsignatura ul li{
+        width: 44%;
+        margin-left: 3em;
+        padding: 2em 2em 2.5em;
+    }
     
+    .itemsAsignatura ul li figure{
+        margin-left: -5em;
+    }
     
+    .itemsAsignatura ul li p{
+        padding-left: 2em;
+    }
+    
+    .informativo .txtArticle{
+        padding-top: 3em;
+    }
 }
 
 @media(min-width: 1200px){
