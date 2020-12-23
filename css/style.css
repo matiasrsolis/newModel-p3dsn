@@ -1073,6 +1073,37 @@ article>section{
     margin: 1em auto;
 }
 
+/*-Nota-*/
+.nota{
+    margin-top: 6em;
+}
+
+.nota .mainComponent{
+    margin-top: 2em
+}
+
+.listParrafo{
+    max-width: 47em;
+    margin: auto;
+}
+
+.nota .verTodas{
+    justify-content: space-between;
+}
+
+.nota .verTodas a{
+    display: flex;
+    align-items: center;
+}
+
+.nota .verTodas a>p{
+    margin-bottom: 0;
+    margin-right: 1em
+}
+
+.nota .verTodas a:last-child p{
+    margin-left: 1em
+}
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
@@ -1380,6 +1411,11 @@ article>section{
     .informativo .txtArticle{
         padding-top: 3em;
     }
+    
+    /*-Nota-*/
+    .nota .migaPan ul{
+        justify-content: center;
+    }
 }
 
 @media(min-width: 1200px){
@@ -1395,6 +1431,10 @@ article>section{
     
     .headerBox #logo{
         margin-left: 0em;
+    }
+    
+    .nota .migaPan ul{
+        justify-content: flex-start;
     }
 }
 
@@ -1431,6 +1471,11 @@ article>section{
     .portadaPage{
         padding-top: 11em;
         padding-bottom: 2em;
+    }
+    
+    /*-Nota-*/
+    .nota .mainComponent {
+        margin-top: 7em;
     }
     
 }
