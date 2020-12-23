@@ -222,6 +222,7 @@ header .escudo img{
     margin: auto;
     display: block;
     width: 4.9em;
+    transition: all .2s ease
 }
 
 .activeLink{
@@ -290,7 +291,7 @@ button:not(:disabled){
 }
 
 main{
-    margin-top: 6em;
+    margin-top: 4em;
 }
 
 /*-Welcome-*/
@@ -807,6 +808,7 @@ footer .datos img{
 .migaPan ul li a{
     color: #313A7D;
     display: block;
+    width: max-content;
 }
 
 .migaPan ul li{
@@ -885,6 +887,56 @@ article>section{
 .institucionalSections li .active{
     font-weight: 700;
 }
+
+
+/*-Nivel primario-*/
+.primario .backPortada{
+    background-image: url(../img/primaria-port.jpg);
+}
+
+.primario .mainComponent p{
+    max-width: 42em;
+    margin: auto;
+}
+
+.informativo .mainComponent{
+    display: block;
+}
+
+.informativo #carouselExampleControls{
+    position: relative;
+    margin-bottom: 6em;
+}
+
+.informativo .slider-control{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3.52em;
+    border-bottom: solid 1px #313A7D;
+}
+
+.informativo .slider-control>a{
+    opacity: 1;
+    display: flex;
+    width: 50%;
+}
+
+.informativo .slider-control>a span{
+    color: #B00000;
+    font-size: 2em;
+    
+}
+
+.informativo .slider-control>a:first-child span{
+    margin-right: auto
+}
+
+.informativo .slider-control>a:last-child span{
+    margin-left: auto
+}
+
+
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
@@ -1007,6 +1059,10 @@ article>section{
     
     .headerBox .navSuperior li a.nav-link{
         padding: .5rem .8rem;
+    }
+    
+    main{
+        margin-top: 4em;
     }
     
     .marginWidth{
