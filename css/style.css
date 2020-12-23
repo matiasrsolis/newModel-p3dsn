@@ -894,10 +894,16 @@ article>section{
     background-image: url(../img/primaria-port.jpg);
 }
 
-.primario .mainComponent p{
+.informativo .mainComponent p{
     max-width: 42em;
     margin: auto;
     margin-bottom: 1.5em
+}
+
+.informativo .mainComponent h3{
+    margin: auto;
+    max-width: 27em;
+    margin-bottom: 2em
 }
 
 .informativo .mainComponent{
@@ -1003,6 +1009,71 @@ article>section{
 }
 
 
+/*-Nivel Inicial-*/
+.inicial .backPortada{
+    background-image: url(../img/inicial-port.jpg);
+}
+
+.itemsInicial{
+    margin-bottom: 5em;
+}
+
+.itemsInicial ul{
+    max-width: 47em;
+    margin: auto;
+}
+
+.itemsInicial ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.itemsInicial ul li>div{
+    width: 90%;
+    padding-left: 1em
+}
+
+.itemsInicial ul li>div p{
+    margin-bottom: 0!important;
+}
+
+.itemsInicial ul li figure{
+    padding: 1em;
+    height: 6em;
+    width: 6em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.itemsInicial ul li figure:not(:last-child){
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.itemsInicial ul li:first-child figure{
+    margin-top: 0;
+}
+
+.itemsInicial ul li figure img{
+    width: 100%;
+    display: block;
+}
+
+.itemsInicial ul li:not(:last-child) figure:after{
+    content: '';
+    display: block;
+    height: 2em;
+    border-left: solid 1px #313A7D;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: 1em auto;
+}
+
+
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
 /*-Tablet-*/
@@ -1104,6 +1175,19 @@ article>section{
     .itemsAsignatura ul li p{
         padding-left: 2em;
     }
+    
+    /*-Nivel Inicial-*/
+    .itemsInicial ul li figure{
+        width: 10em;
+        height: 10em;
+        padding: 1.5em;
+    }
+    
+    .itemsInicial ul li>div{
+        width: 80%;
+        padding-left: 3em
+    }
+    
 }
 
 /*-Laptop-*/
