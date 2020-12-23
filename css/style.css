@@ -1089,6 +1089,7 @@ article>section{
 
 .nota .verTodas{
     justify-content: space-between;
+    margin-top: 3em
 }
 
 .nota .verTodas a{
