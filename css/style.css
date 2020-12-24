@@ -944,7 +944,7 @@ article>section{
 }
 
 .txtArticle{
-    padding: 3em 0;
+    padding: 2em 0;
 }
 
 .informativo .txtArticle{
@@ -1089,7 +1089,7 @@ article>section{
 
 .nota .verTodas{
     justify-content: space-between;
-    margin-top: 3em
+    margin-top: 5em
 }
 
 .nota .verTodas a{
@@ -1104,6 +1104,126 @@ article>section{
 
 .nota .verTodas a:last-child p{
     margin-left: 1em
+}
+
+.informativo .txtArticle {
+    padding-top: 2em;
+}
+
+/*-PracTICas-*/
+.practicasPage .backPortada{
+    background-color: #E4E6FF;
+}
+
+.practicasPage .blueLine{
+    width: 4em;
+    margin: auto;
+    border-bottom: solid 3px #313A7D;
+}
+
+.practicasPage .mainComponent{
+    display: flex;
+    flex-direction: column;
+}
+
+.practicasPage .mainComponent .blogItems ul li.items{
+    margin-bottom: 5em;
+}
+
+.practicasPage .mainComponent .blogItems ul li.items h3{
+    margin-bottom: 1em
+}
+
+.practicasPage .mainComponent aside ul li{
+    margin-bottom: 3em
+}
+
+.practicasPage .mainComponent aside ul li.form input{
+    display: block;
+    border: solid 1px #B2BAFF;
+    padding: .7em;
+    width: calc(100% - 50px);
+    height: 50px
+}
+
+.practicasPage .mainComponent aside ul li.form span{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: #B00000;
+    justify-content: center;
+    align-items: center;
+}
+
+.practicasPage .mainComponent aside ul li figure img{
+    width:100%;
+}
+
+.practicasPage .mainComponent aside ul li.form .form-select{
+    display: block;
+    border: solid 1px #ffffff;
+    padding: .7em;
+    width: 100%;
+    height: 50px;
+    color: #B00000
+}
+
+/*.practicasPage .mainComponent aside>ul{
+    position: sticky;
+    top: 6em;
+}*/
+
+.practicasPage .mainComponent aside ul li h4{
+    font-size: 1.125em;
+    border-bottom: solid 1px #313A7D;
+    padding-bottom: .7em;
+    margin-bottom: .7em;
+}
+
+.practicasPage .mainComponent aside ul li.tags ul li{
+    margin-bottom: 1em;
+}
+
+.practicasPage .blogItems>ul{
+    padding: 0!important
+}
+
+#practicas .paginacion ul.flex{
+    justify-content: center
+}
+
+#practicas .paginacion ul.flex li>a,
+#practicas .paginacion ul.flex li>span{
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313A7D;
+    margin: 0 .5em
+}
+
+#practicas .paginacion ul.flex li>a:hover{
+    font-weight: 700
+}
+
+#practicas .paginacion ul.flex li>a.square{
+    background-color: #ffffff;
+    border: solid 1px #313A7D;
+}
+
+#practicas .paginacion ul.flex li>a.active{
+    background-color: #313A7D;
+    color: #ffffff;
+}
+
+#practicas .paginacion{
+    margin-top: 2em
+}
+
+.practicasPage .mainComponent{
+    padding-top: 1em;
+    padding-bottom: 8em;
 }
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
@@ -1218,6 +1338,29 @@ article>section{
     .itemsInicial ul li>div{
         width: 80%;
         padding-left: 3em
+    }
+    
+    
+    /*-PracTICas-*/
+    .practicasPage .mainComponent{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .practicasPage .mainComponent>#practicas{
+        width: 71%;
+    }
+    
+    .practicasPage .mainComponent>aside{
+        width: 25%;
+    }
+    
+    .practicasPage .mainComponent .blogItems ul{
+        flex-wrap: wrap;
+    }
+    
+    .practicasPage .mainComponent .blogItems ul li.items{
+        width: 46%!important;
     }
     
 }
