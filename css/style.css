@@ -225,8 +225,22 @@ header .escudo img{
     transition: all .2s ease
 }
 
-.activeLink{
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.headerBox li a.nav-link{
+    border-bottom: 3px solid #313A7D
+}
+
+.headerBox li a.nav-link.activeLink{
     border-bottom: 3px solid #B00000
+}
+
+.headerBox li:hover a:hover{
+    color: #ffffff;
+    border-bottom: 3px solid #6670b7
 }
 
 #isologo{
@@ -292,15 +306,28 @@ button:not(:disabled){
 
 main{
     margin-top: 4em;
+    padding-bottom: 6em;
+}
+
+article figure{
+    margin-bottom: 2em;
+}
+
+article figure img{
+    width: 100%;
+}
+
+.itemsAsignatura figure img{
+    width: inherit;
 }
 
 /*-Welcome-*/
 #welcome{
-    padding: 3em 0
+    padding: 7em 0 5em;
 }
 
 #welcome .txtWelc{
-    text-align: center;
+    text-align: center;margin-bottom: 2.5em
 }
 
 .enlacePlus>a{
@@ -347,7 +374,7 @@ main{
 
 #welcome .niveles{
     justify-content: space-between;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 #welcome .niveles>a{
@@ -433,7 +460,7 @@ main{
 
 /*-Propuesta-*/
 #propuesta{
-    
+    margin-top: 4em;
 }
 
 #propuesta .asignaturas ul{
@@ -445,6 +472,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 4em;
 }
 
 #propuesta .asignaturas ul li{
@@ -533,6 +561,10 @@ main{
 
 /*-PracTICas-*/
 #practicas{
+    padding: 6em 0 2em;
+}
+
+.practicasPage #practicas{
     padding: 0
 }
 
@@ -551,10 +583,12 @@ main{
 
 #practicas .blogItems>ul li.items{
     width: 100%;
+    margin-bottom: 5em;
 }
 
 #practicas .blogItems>ul li.items .enlace{
-    align-items: center
+    align-items: center;
+    margin-top: 1em;
 }
 
 #practicas .blogItems>ul li.items>a{
@@ -618,6 +652,7 @@ main{
 #novedades .tituloNovedades{
     display: flex;
     margin-bottom: 2em;
+    margin-top: 5em;
 }
 
 #novedades .tituloNovedades h2{
@@ -697,6 +732,10 @@ main{
     padding-top: 1em;
 }
 
+#novedades .verTodas{
+    padding-top: 3em;
+    padding-bottom: 6em
+}
 
 /*-Instituciones-*/
 .owl-carousel{
@@ -716,6 +755,7 @@ main{
 
 .owl-carousel.owl-loaded{
     display: flex;
+    padding: 1em 0;
 }
 
 .owl-carousel .box{
@@ -740,22 +780,32 @@ footer nav{
     display: none
 }
 
+footer nav li a:hover{
+    color: #B00000
+}
+
 .footerBox{
     display: flex;
     justify-content: space-between;
+    padding-top: 4em;
+    padding-bottom: 2em
 }
 
 footer .copyright{
     border-top: 2px solid #B00000;
     margin-top: 2em;
-    padding: .5em 0 0 0;
+    padding: .5em 0 1em 0;
+}
+
+footer .copyright p{
+    margin-bottom: 0;
 }
 
 .btn-top{
     width: fit-content;
     position: fixed;
     bottom: 3em;
-    right: 2em;
+    right: 1.875em;
     background-color: #ffffff;
 }
 
@@ -777,14 +827,19 @@ footer .copyright{
 }
 
 footer .datos img{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     margin-bottom: 2em;
+    display: block;
 }
 
+footer .datos>div p{
+    text-align: center;
+}
 
 /*-Institucional-*/
 .portadaPage{
-    padding-top: 3em;
+    padding-top: 4em;
     padding-bottom: 2em;
 }
 
@@ -912,7 +967,7 @@ article>section{
 
 .informativo #carouselExampleControls{
     position: relative;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
 }
 
 .informativo .slider-control{
@@ -974,7 +1029,7 @@ article>section{
 }
 
 .itemsAsignatura ul li figure{
-    margin-left: -4em;
+    margin-left: -5em;
     position: relative;
     margin-bottom: 0;
 }
@@ -1001,7 +1056,7 @@ article>section{
 }
 
 .informativo article{
-    padding-bottom: 9em;
+    padding-bottom: 4em;
 }
 
 .mainComponent .btnRedBlue{
@@ -1075,7 +1130,7 @@ article>section{
 
 /*-Nota-*/
 .nota{
-    margin-top: 6em;
+    margin-top: 7em;
 }
 
 .nota .mainComponent{
@@ -1188,42 +1243,80 @@ article>section{
     padding: 0!important
 }
 
-#practicas .paginacion ul.flex{
-    justify-content: center
+.paginacion ul.flex{
+    justify-content: center!important
 }
 
-#practicas .paginacion ul.flex li>a,
-#practicas .paginacion ul.flex li>span{
-    height: 2em;
-    width: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.paginacion ul.flex li{
+    width: inherit!important;
+    margin-bottom: 0!important
+}
+
+.paginacion ul.flex li>a,
+.paginacion ul.flex li>span{
+    height: 1.8em;
+    width: 1.8em;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
     color: #313A7D;
-    margin: 0 .5em
+    margin: 0 .2em;
 }
 
-#practicas .paginacion ul.flex li>a:hover{
-    font-weight: 700
+.paginacion ul.flex li>a:hover{
+    font-weight: 700;
+    box-shadow: 1px 1px 1px #313A7D;
 }
 
-#practicas .paginacion ul.flex li>a.square{
+.paginacion ul.flex li>a.square{
     background-color: #ffffff;
     border: solid 1px #313A7D;
 }
 
-#practicas .paginacion ul.flex li>a.active{
+.paginacion ul.flex li>a.active{
     background-color: #313A7D;
     color: #ffffff;
 }
 
-#practicas .paginacion{
-    margin-top: 2em
+.paginacion{
+    margin-top: 4em
 }
 
-.practicasPage .mainComponent{
+.practicasPage .mainComponent,
+.novedadesPage .mainComponent{
     padding-top: 1em;
     padding-bottom: 8em;
+}
+
+/*-Novedades-*/
+.mainComponent #novedades ul li:first-child{
+    width: 100%;
+}
+
+.mainComponent #novedades ul li>a{
+    display: block;
+}
+
+.mainComponent #novedades ul li:nth-child(3),
+.mainComponent #novedades ul li:nth-child(4){
+    margin-bottom: 2em;
+}
+
+.mainComponent #novedades ul li:nth-child(3)>a figure,
+.mainComponent #novedades ul li:nth-child(4)>a figure{
+    display: block;
+}
+
+#novedades ul li>a .enlacePlus{
+    margin-top: 2em;
+}
+
+#novedades .portal ul li{
+    margin-bottom: 2em;
+}
+
+.novedadesPage .backPortada{
+    background-image: url(../img/novedades-port.jpg)
 }
 
 /*---------------------------------------------MediaQueries---------------------------------------------*/
@@ -1257,6 +1350,15 @@ article>section{
         width: 9em;
     }
     
+    #isologo{
+        width: 13em;
+    }
+    
+    #aniversario{
+        padding: 3em 1.875em;
+        background-color: #ffffff;
+    }
+    
     /*-Welcome-*/
     #welcome .niveles figure{
         height: 30em;
@@ -1277,8 +1379,8 @@ article>section{
     }
     
     /*-Institucional-*/
-    .portadaPage{
-        padding-top: 6em;
+    .portadaPage {
+        padding-top: 10em;
         padding-bottom: 2em;
     }
     
@@ -1287,7 +1389,7 @@ article>section{
     }
     
     .migaPan{
-        margin: 0 1.875em;
+        margin: 0 1.875em 2em;
         padding: 1em 0;
     }
     
@@ -1352,7 +1454,7 @@ article>section{
     }
     
     .practicasPage .mainComponent>aside{
-        width: 25%;
+        width: 23%;
     }
     
     .practicasPage .mainComponent .blogItems ul{
@@ -1360,13 +1462,46 @@ article>section{
     }
     
     .practicasPage .mainComponent .blogItems ul li.items{
-        width: 46%!important;
+        width: 100%!important;
+    }
+    
+    .paginacion ul.flex li>a,
+    .paginacion ul.flex li>span{
+        height: 2em;
+        width: 2em;
+        margin: 0 .5em;
+    }
+    
+    footer .datos img{
+        width: 16em;
+        margin-bottom: 2em;
+        margin-left: 0;
+    }
+    
+    footer .datos>div p{
+        text-align: left;
+    }
+    
+    footer{
+        padding-top: 3em
+    }
+    
+    .footerBox{
+        margin-bottom: 3em
     }
     
 }
 
 /*-Laptop-*/
 @media(min-width: 992px){
+    header{
+        padding: 0 2em;
+    }
+    
+    .navbar{
+        padding: 1em 2em;
+    }
+    
     .headerBox ul{
         flex-direction: row;
         width: auto
@@ -1376,6 +1511,10 @@ article>section{
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-end;
+    }
+    
+    header .escudo{
+        margin-top: 1.5em
     }
     
     header .escudo img{
@@ -1389,8 +1528,19 @@ article>section{
         width: 12em;
     }
     
+    .headerBox ul li a{
+        padding: .5rem 0;
+        margin: 0 .5em;
+    }
+    
     .headerBox .navSuperior li a.nav-link{
-        padding: .5rem .8rem;
+        padding: .5rem 0;
+        margin: 0 .5em 0;
+    }
+    
+    .portadaPage{
+        padding-top: 8em;
+        padding-bottom: 2em;
     }
     
     main{
@@ -1434,7 +1584,12 @@ article>section{
     /*-PracTICas-*/
     #practicas .blogItems>ul{
         justify-content: space-between;
-        flex-direction: row
+        flex-direction: row;
+        margin: auto;
+    }
+    
+    .practicasPage #practicas .blogItems>ul{
+        max-width: 73em;
     }
     
     #practicas .blogItems>ul li.items{
@@ -1456,6 +1611,9 @@ article>section{
         margin-top: 0
     }
     
+    #practicas{
+        padding: 6em 0 3em;
+    }
     
     /*-section Novedades-*/
     #novedades .portal ul{
@@ -1463,7 +1621,7 @@ article>section{
     }
     
     #novedades .portal ul li{
-        margin-bottom: 0;
+        margin-bottom: 2m;
         width: 32%;
     }
     
@@ -1483,7 +1641,14 @@ article>section{
     }
     
     #novedades .verTodas{
-        padding-top: 5em;
+        padding-top: 2em;
+        padding-bottom: 6em
+    }
+    
+    #novedades .tituloNovedades{
+        display: flex;
+        margin-bottom: 3em;
+        margin-top: 6em;
     }
     
     /*-Instituciones-*/
@@ -1493,6 +1658,7 @@ article>section{
     
     .instList{
         display: flex;
+        padding: 5em 0 4em;
     }
     
     .instList ul{
@@ -1506,6 +1672,10 @@ article>section{
     .instList ul>div{
         display: flex;
         justify-content: center;
+    }
+    
+    .instList ul>div:first-child{
+        margin-bottom: 1.5em
     }
     
     .instList ul>div li{
@@ -1534,18 +1704,15 @@ article>section{
         margin-bottom: 1em;
     }
     
-    .btn-top{
-        right: 4.3em;
-    }
-    
     .itemsAsignatura ul li{
         width: 44%;
         margin-left: 3em;
-        padding: 2em 2em 2.5em;
+        padding: 1em 2em 1.5em;
     }
     
     .itemsAsignatura ul li figure{
         margin-left: -5em;
+        width: 12em;
     }
     
     .itemsAsignatura ul li p{
@@ -1553,24 +1720,115 @@ article>section{
     }
     
     .informativo .txtArticle{
-        padding-top: 3em;
+        padding-top: 0;
+    }
+    
+    #practicas .blogItems>ul li.items .enlace{
+        margin-top: 2em
     }
     
     /*-Nota-*/
     .nota .migaPan ul{
         justify-content: center;
     }
+    
+    /*-PracTICas-*/
+    .practicasPage .mainComponent .blogItems ul li.items{
+        width: 46%!important;
+    }
+    
+    /*-Novedades-*/
+    .mainComponent #novedades ul li:first-child{
+        width: 100%;
+    }
+    
+    .mainComponent #novedades ul li:first-child>a{
+        display: flex
+    }
+    
+    .mainComponent #novedades ul li:first-child>a .titular{
+        padding: 3em 4em;
+    }
+    
+    .mainComponent #novedades ul li:nth-child(2),
+    .mainComponent #novedades ul li:nth-child(3),
+    .mainComponent #novedades ul li:nth-child(4){
+        width: 32%;
+    }
+    
+    
+    
+    .mainComponent #novedades .portal ul li:nth-child(1) a{
+        flex-direction: row;
+    }
+    
+    #novedades .portal ul li .titular .enlacePlus{
+        margin-top: auto;
+    }
+    
+    #novedades .portal ul li .titular h3{
+        margin-bottom: 2em;
+    }
+    
+    .mainComponent #novedades ul li>a figure{
+        min-height: 20em;
+    }
+    
+    .mainComponent #novedades ul li:first-child>a{
+        justify-content: space-between
+    }
+    
+    .mainComponent #novedades ul li:first-child>a figure{
+        width: 40%;
+        height: 100%;
+    }
+    
+    .mainComponent #novedades ul li:first-child>a .titular{
+        width: 60%
+    }
+    
+    #novedades .portal ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #novedades .portal ul li>a{
+        flex: 1
+    }
+    
+    #novedades .portal ul li .titular{
+        height: 100%;
+    }
+    
+    #novedades .portal ul li:nth-child(2) .titular,
+    #novedades .portal ul li:nth-child(3) .titular,
+    #novedades .portal ul li:nth-child(4) .titular{
+        height: inherit
+    }
+    
+    article h1{
+        margin-bottom: 1em
+    }
+    
+    article figure{
+        margin-bottom: 5em;
+    }
+    
+    .practicasPage article figure{
+        margin-bottom: 2em;
+    }
+    
 }
 
 @media(min-width: 1200px){
     
     .marginWidth{
-        padding: 0 0em;
+       /*- padding: 0 0em; -*/
     }
     
     header .escudo img{
         margin: auto;
-        width: 7em;
+        width: 10em;
     }
     
     .headerBox #logo{
@@ -1580,10 +1838,41 @@ article>section{
     .nota .migaPan ul{
         justify-content: flex-start;
     }
+    
+    main{
+        margin-top: 7em
+    }
+    
+    .indexPage{
+        padding-bottom: 0!important
+    }
+    
+    .nota .mainComponent{
+        margin-top: 4em
+    }
+    
+    .itemsAsignatura ul li figure{
+        width: 14em;
+    }
+
+}
+
+@media(min-width: 1300px){
+    .headerBox li a.nav-link{
+        font-size: 1em;
+    }
 }
 
 /*-Desktop-*/
 @media(min-width: 93.75em){
+    .headerBox li a.nav-link{
+        font-size: 1.125em;
+    }
+    
+    .btn-top{
+        right: 4.3em;
+    }
+    
     #propuesta .asignaturas ul li>a figure .propInfo p{
         font-size: 1.125em;
     }
