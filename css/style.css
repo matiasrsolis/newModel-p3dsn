@@ -121,8 +121,9 @@ a {
     border-radius: 1.5em;
     background-color: #ffffff;
     margin: auto;
-    width: fit-content;
+    width: max-content;
     transition: all .5s ease;
+    text-align: center;
 }
 
 .btnRedBlue:hover{
@@ -309,6 +310,10 @@ main{
     padding-bottom: 6em;
 }
 
+main.indexPage{
+    padding-bottom: 0!important;
+}
+
 article figure{
     margin-bottom: 2em;
 }
@@ -335,6 +340,8 @@ article figure img{
     display: flex;
     width: fit-content;
     margin: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 #welcome .enlacePlus p{
@@ -1319,6 +1326,10 @@ article>section{
     background-image: url(../img/novedades-port.jpg)
 }
 
+footer{
+    padding-top: 0!important
+}
+
 /*---------------------------------------------MediaQueries---------------------------------------------*/
 
 /*-Tablet-*/
@@ -1691,8 +1702,12 @@ article>section{
     
     
     /*-Footer-*/
+    footer{
+        padding-top: 3em!important;
+    }
+    
     footer nav{
-        display: flex
+        display: flex!important
     }
     
     footer nav ul{
