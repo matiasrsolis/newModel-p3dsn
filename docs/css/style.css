@@ -1,0 +1,1929 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Vollkorn:ital,wght@0,500;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #313A7D;
+    outline: none;
+}
+
+.bgBlue{
+    background-color: #313A7D;
+}
+
+.bgViolet{
+    background-color: #E4E6FF;
+}
+
+.bgGrey{
+    background-color: #E7E8F1;
+}
+
+.bgRed{
+    background-color: #B00000;
+}
+
+.bgWhite{
+    background-color: #ffffff;
+}
+
+.fontBlue{
+    color: #313A7D;
+}
+
+.fontRed{
+    color: #B00000
+}
+
+.fontWhite{
+    color: #ffffff;
+}
+
+.vollkorn{
+    font-family: 'Vollkorn', serif;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.medium{
+    font-weight: 500;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.normal{
+    font-style: normal;
+}
+
+.spacing{
+    letter-spacing: 1px;
+}
+
+.spacing150{
+    letter-spacing: 2.5px;
+}
+
+.parrafo{
+    font-size: 1em;
+    line-height: 1.81em;
+}
+
+.heading48{
+    font-size: 2em;
+}
+
+.heading36{
+    font-size: 1.5em;
+}
+
+.heading24{
+    font-size: 1.25em;
+}
+
+.center{
+    text-align: center;
+}
+
+ul{
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textDeco{
+    text-decoration: none
+}
+
+.btnRedBlue{
+    display: block;
+    border: solid 2px #B00000;
+    color: #313A7D;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.2em 1.18em;
+    font-size: 1em;
+    border-radius: 1.5em;
+    background-color: #ffffff;
+    margin: auto;
+    width: max-content;
+    transition: all .5s ease;
+    text-align: center;
+}
+
+.btnRedBlue:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B00000;
+    transition: all .2s ease;
+}
+
+.mayuscula{
+    text-transform: uppercase;
+}
+
+.marginWidth{
+    width: 100%;
+    padding: 0 1.875em;
+    max-width: 73em;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.blockFlex{
+    display: block
+}
+
+body{
+    background-color: #F9F9FA;
+}
+
+header{
+    z-index: 9999;
+    position: fixed!important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em;
+}
+
+.headerBox{
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.headerBox #logo{
+    width: 8em;
+}
+
+.headerBox nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBox ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.headerBox ul li a{
+    display: block;
+    color: #ffffff;
+}
+
+.headerBox .navSuperior li a{
+    text-transform: uppercase;
+    font-size: 14px
+}
+
+.headerBox ul li a:hover{
+    color: #E4E6FF;
+    text-decoration: none;
+}
+
+header .escudo{
+    position: absolute;
+    top: 1em;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 1em;
+}
+
+header .escudo img{
+    margin: auto;
+    display: block;
+    width: 4.9em;
+    transition: all .2s ease
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.headerBox li a.nav-link{
+    border-bottom: 3px solid #313A7D
+}
+
+.headerBox li a.nav-link.activeLink{
+    border-bottom: 3px solid #B00000
+}
+
+.headerBox li:hover a:hover{
+    color: #ffffff;
+    border-bottom: 3px solid #6670b7
+}
+
+#isologo{
+    display: none;
+    width: 11em;
+}
+
+.carousel-item{
+    position: relative;
+    height: 65vh;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item .slideTxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3.5em;
+}
+
+.carousel-item .slideTxt h1,
+.carousel-item .slideTxt h2{
+    font-size: 2.2em
+}
+
+.carousel-item .slideTxt h1,
+.carousel-item .slideTxt h2,
+.carousel-item .slideTxt p{
+    color: #ffffff;
+    text-align: center;
+    max-width: 989px;
+}
+
+.carousel-item .slideTxt p{
+    margin-top: 1em
+}
+
+.carousel-item .slideTxt .separador{
+    border-bottom: solid 3px #B00000;
+    width: 9em;
+    margin-top: 2em
+}
+
+.outlineNone{
+    outline: none;
+}
+
+button:not(:disabled){
+    outline: none;
+}
+
+main{
+    margin-top: 4em;
+    padding-bottom: 6em;
+}
+
+main.indexPage{
+    padding-bottom: 0!important;
+}
+
+article figure{
+    margin-bottom: 2em;
+}
+
+article figure img{
+    width: 100%;
+}
+
+.itemsAsignatura figure img{
+    width: inherit;
+}
+
+/*-Welcome-*/
+#welcome{
+    padding: 7em 0 5em;
+}
+
+#welcome .txtWelc{
+    text-align: center;margin-bottom: 2.5em
+}
+
+.enlacePlus>a{
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#welcome .enlacePlus p{
+    max-width: 200px;
+}
+
+.seccionTitulo{
+    width: content-fit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.7em;
+}
+
+.seccionTitulo h2{
+    text-align: center;
+    max-width: 19em;
+}
+
+.seccionTitulo .separador{
+    border-bottom: 2px solid #B00000;
+    width: 10.3em;
+    margin-top: 1.8em;
+}
+
+#aniversario{
+    padding: 2em 1.875em;
+    background-color: #ffffff;
+}
+
+#aniversario img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 66em
+}
+
+#welcome .niveles{
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+#welcome .niveles>a{
+    display: block;
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#welcome .niveles figure{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 17.8em;
+}
+
+#welcome .niveles figure::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 29, 73, 0.6);
+    z-index: 10;
+}
+
+#welcome .niveles figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#welcome .niveles figure:hover img{
+    width: 110%;
+    height: 110%;
+    transition: all .5s ease;
+    left: -5%;
+    top: -5%;
+    
+}
+
+#welcome .niveles .nivelInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+    max-width: 25em;
+    padding: 2.5em 3em;
+}
+
+#welcome .niveles .nivelInfo .nivelTitulo{
+    width: fit-content;
+}
+
+#welcome .niveles .nivelInfo p{
+    margin: 0;
+}
+
+#welcome .niveles .nivelInfo>div .subrayado{
+    width: 60%;
+    border-bottom: 2px solid #B00000;
+    transition: all .3s ease;
+}
+
+#welcome .niveles figure:hover .nivelInfo>div .subrayado{
+    width: 100%;
+}
+
+
+
+/*-Propuesta-*/
+#propuesta{
+    margin-top: 4em;
+}
+
+#propuesta .asignaturas ul{
+    margin: 0;
+    padding: 0;
+}
+
+#propuesta .asignaturas ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+#propuesta .asignaturas ul li{
+    width: 100%;
+}
+
+#propuesta .asignaturas ul li>a{
+    display: block;
+    position: relative;
+}
+
+#propuesta .asignaturas ul li>a figure{
+    /*height: 17.18em;*/
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0
+}
+
+#propuesta .asignaturas ul li>a figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo{
+    color: #ffffff;
+    background-color: rgba(49, 58, 125, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 3em;
+    transition: all .6s ease;
+    opacity: 0
+}
+
+#propuesta .asignaturas ul li>a figure>h3{
+    text-align: center;
+    position: absolute;  
+    width: 100%;
+    padding: 1em;
+    transition: all 1.2s ease;
+    line-height: 1.5em
+}
+
+#propuesta .asignaturas ul li>a figure:hover>h3{
+    display: none;
+    transition: all 3s ease;
+    
+}
+
+#propuesta .asignaturas ul li>a figure:hover .propInfo{
+    /*left: 0%;*/
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo h3{
+    margin-bottom: .7em;
+    text-align: center;
+    line-height: 1.5em
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo p{
+    text-align: center;
+    margin-bottom: 1.7em
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo span{
+    display: flex;
+    align-items: center;
+}
+
+#propuesta .asignaturas ul li>a figure .propInfo span i{
+    margin-right: .35em;
+}
+
+
+/*-PracTICas-*/
+#practicas{
+    padding: 6em 0 2em;
+}
+
+.practicasPage #practicas{
+    padding: 0
+}
+
+#practicas>div.seccionTitulo .separador{
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #313A7D
+}
+
+#practicas .blogItems>ul{
+    padding: 0 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column
+}
+
+#practicas .blogItems>ul li.items{
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+#practicas .blogItems>ul li.items .enlace{
+    align-items: center;
+    margin-top: 1em;
+}
+
+#practicas .blogItems>ul li.items>a{
+    display: block;
+}
+
+#practicas .blogItems>ul li.items figure{
+    max-height: 22em;
+    overflow: hidden;
+}
+
+#practicas .blogItems>ul li.items figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#practicas .blogItems>ul li.items .enlace .lineaAzul{
+    border-bottom: solid 2px #313A7D;
+    height: 50%;
+    width: 2.4em;
+    margin-right: 1em;
+    transition: all .3s ease;
+}
+
+#practicas .blogItems>ul li.items:hover .enlace .lineaAzul{
+    width: 3.4em;
+    transition: all .3s ease;
+}
+
+#practicas ul.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#practicas .blogItems>ul li.items ul li.tags ul li{
+    padding: 0;
+    padding-left: .4em
+}
+
+#practicas .blogItems>ul li.items ul li.tags ul li:not(:last-child){
+    border-right: solid 1px #ffffff;
+    padding-right: .4em;
+}
+
+#practicas .blogItems>ul li.items ul li.tags ul li span{
+    font-size: 0.75em;
+    display: block;
+}
+
+#practicas .blogItems>ul li.items .bgBlue{
+    padding: .3em .5em;
+}
+
+#practicas .blogItems>ul li.items .bgBlue .fecha{
+    font-size: .875em;
+}
+
+
+/*-section Novedades-*/
+#novedades .tituloNovedades{
+    display: flex;
+    margin-bottom: 2em;
+    margin-top: 5em;
+}
+
+#novedades .tituloNovedades h2{
+    width: fit-content;
+    margin-bottom: 0;
+    margin-right: .3em;
+}
+
+.redLine{
+    border-bottom: 2px solid #B00000;
+    width: 100%;
+    position: relative;
+    bottom: 8px;
+}
+
+#novedades .portal ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#novedades .portal ul li{
+    width: 100%;
+    margin-bottom: 2em;
+    transition: all .2s ease;
+    border: solid 2px #313A7D;
+}
+
+#novedades .portal ul li>a{
+    display: flex;
+    flex-direction: column;
+}
+
+#novedades .portal ul li:hover{
+    box-shadow: 1.5px 1.5px 1px #313A7D;
+    transition: all .2s ease;
+}
+
+#novedades .portal ul li .titular{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+#novedades .portal ul li .titular .enlacePlus{
+    margin: inherit;
+    display: flex;
+    width: fit-content;
+    font-size: 1.125em;
+}
+
+#novedades .portal ul li .titular .enlacePlus p{
+    margin-bottom: 0
+}
+
+#novedades .portal ul li>a figure{
+    display: none;
+    overflow: hidden;
+    margin: 0;
+    height: 17em;
+}
+
+#novedades .portal ul li>a figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#novedades .portal ul li:first-child figure,
+#novedades .portal ul li:nth-child(2) figure{
+    display: block;
+}
+
+#novedades .verTodas{
+    padding-top: 1em;
+}
+
+#novedades .verTodas{
+    padding-top: 3em;
+    padding-bottom: 6em
+}
+
+/*-Instituciones-*/
+.owl-carousel{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.owl-carousel.owl-loaded{
+    display: flex;
+    padding: 1em 0;
+}
+
+.owl-carousel .box{
+    height: 7em;
+    width: 80%;
+    margin: auto;
+}
+
+.owl-carousel .box img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.instList{
+    display: none;
+}
+
+
+/*-Footer-*/
+footer nav{
+    display: none
+}
+
+footer nav li a:hover{
+    color: #B00000
+}
+
+.footerBox{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4em;
+    padding-bottom: 2em
+}
+
+footer .copyright{
+    border-top: 2px solid #B00000;
+    margin-top: 2em;
+    padding: .5em 0 1em 0;
+}
+
+footer .copyright p{
+    margin-bottom: 0;
+}
+
+.btn-top{
+    width: fit-content;
+    position: fixed;
+    bottom: 3em;
+    right: 1.875em;
+    background-color: #ffffff;
+}
+
+.btn-top a{
+    padding: .4em;
+    display: block;
+    border: solid 2px #B00000;
+}
+
+.btn-top:hover a{
+    border: solid 3px #B00000;
+}
+
+.btn-top i{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: 700
+}
+
+footer .datos img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+}
+
+footer .datos>div p{
+    text-align: center;
+}
+
+/*-Institucional-*/
+.portadaPage{
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.portadaPage h1{
+    text-align: center;
+}
+
+.institucional .backPortada{
+    background-image: url(../img/institucional.jpg);
+}
+
+.migaPan{
+    margin: 0 1.875em 1em;
+    padding: 1em 0;
+}
+
+.migaPan ul{
+    align-items: center;
+}
+
+.migaPan ul li a{
+    color: #313A7D;
+    display: block;
+    width: max-content;
+}
+
+.migaPan ul li{
+    font-size: .875em;
+    margin-right: .5em;
+}
+
+.mainComponent .subtitlePage{
+    margin-bottom: 1em;
+}
+
+.mainComponent .subtitlePage .redLine{
+    width: 3em;
+}
+
+.mainComponent .subtitlePage h2{
+    margin-left: .3em;
+}
+
+.bajada{
+   font-weight: 500 
+}
+
+.listParrafo{
+    padding-left: 1.8em
+}
+
+.listParrafo li{
+    list-style: square;
+}
+
+.listParrafo li::marker{
+    color: #B00000;
+    font-size: 1.5em;
+    margin-right: 1em
+}
+
+.listParrafo li p{
+    margin-left: 1em;
+}
+
+article p{
+    font-size: 1em;
+    line-height: 1.81em;
+}
+
+article>section:first-child{
+    margin-top: 0
+}
+
+article>section{
+    margin-top: 4em;
+}
+
+.institucionalSections{
+    margin-top: 3em;
+}
+
+.institucionalSections li a{
+    display: block;
+    border-bottom: solid 1px #313A7D;
+    padding: 1em 0 .5em;
+}
+
+.institucionalSections li .redLine{
+    width: 2em;
+    margin-right: .5em;
+    transition: all .5s ease
+}
+
+.institucionalSections li:hover .redLine{
+    width: 2.68em;
+    transition: all .5s ease
+}
+
+.institucionalSections li .active{
+    font-weight: 700;
+}
+
+
+/*-Nivel primario-*/
+.primario .backPortada{
+    background-image: url(../img/primaria-port.jpg);
+}
+
+.informativo .mainComponent p{
+    max-width: 42em;
+    margin: auto;
+    margin-bottom: 1.5em
+}
+
+.informativo .mainComponent h3{
+    margin: auto;
+    max-width: 27em;
+    margin-bottom: 2em
+}
+
+.informativo .mainComponent{
+    display: block;
+}
+
+.informativo #carouselExampleControls{
+    position: relative;
+    margin-bottom: 8em;
+}
+
+.informativo .slider-control{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3.52em;
+    border-bottom: solid 1px #313A7D;
+}
+
+.informativo .slider-control>a{
+    opacity: 1;
+    display: flex;
+    width: 50%;
+}
+
+.informativo .slider-control>a span{
+    color: #B00000;
+    font-size: 2em;
+    
+}
+
+.informativo .slider-control>a:first-child span{
+    margin-right: auto
+}
+
+.informativo .slider-control>a:last-child span{
+    margin-left: auto
+}
+
+.txtArticle{
+    padding: 2em 0;
+}
+
+.informativo .txtArticle{
+    padding-top: 0em;
+}
+
+.itemsAsignatura{
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+.itemsAsignatura ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.itemsAsignatura ul li{
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border: solid 1px #313A7D;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em
+}
+
+.itemsAsignatura ul li figure{
+    margin-left: -5em;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.itemsAsignatura ul li figure:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 29, 73, 0.5);
+}
+
+.itemsAsignatura ul li p{
+    margin-bottom: 0!important;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.itemsAsignatura p span{
+    font-weight: 700;
+}
+
+.informativo article{
+    padding-bottom: 4em;
+}
+
+.mainComponent .btnRedBlue{
+    font-size: 1.125em;
+}
+
+
+/*-Nivel Inicial-*/
+.inicial .backPortada{
+    background-image: url(../img/inicial-port.jpg);
+}
+
+.itemsInicial{
+    margin-bottom: 5em;
+}
+
+.itemsInicial ul{
+    max-width: 47em;
+    margin: auto;
+}
+
+.itemsInicial ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.itemsInicial ul li>div{
+    width: 90%;
+    padding-left: 1em
+}
+
+.itemsInicial ul li>div p{
+    margin-bottom: 0!important;
+}
+
+.itemsInicial ul li figure{
+    padding: 1em;
+    height: 6em;
+    width: 6em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.itemsInicial ul li figure:not(:last-child){
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.itemsInicial ul li:first-child figure{
+    margin-top: 0;
+}
+
+.itemsInicial ul li figure img{
+    width: 100%;
+    display: block;
+}
+
+.itemsInicial ul li:not(:last-child) figure:after{
+    content: '';
+    display: block;
+    height: 2em;
+    border-left: solid 1px #313A7D;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: 1em auto;
+}
+
+/*-Nota-*/
+.nota{
+    margin-top: 7em;
+}
+
+.nota .mainComponent{
+    margin-top: 2em
+}
+
+.listParrafo{
+    max-width: 47em;
+    margin: auto;
+}
+
+.nota .verTodas{
+    justify-content: space-between;
+    margin-top: 5em
+}
+
+.nota .verTodas a{
+    display: flex;
+    align-items: center;
+}
+
+.nota .verTodas a>p{
+    margin-bottom: 0;
+    margin-right: 1em
+}
+
+.nota .verTodas a:last-child p{
+    margin-left: 1em
+}
+
+.informativo .txtArticle {
+    padding-top: 2em;
+}
+
+/*-PracTICas-*/
+.practicasPage .backPortada{
+    background-color: #E4E6FF;
+}
+
+.practicasPage .blueLine{
+    width: 4em;
+    margin: auto;
+    border-bottom: solid 3px #313A7D;
+}
+
+.practicasPage .mainComponent{
+    display: flex;
+    flex-direction: column;
+}
+
+.practicasPage .mainComponent .blogItems ul li.items{
+    margin-bottom: 5em;
+}
+
+.practicasPage .mainComponent .blogItems ul li.items h3{
+    margin-bottom: 1em
+}
+
+.practicasPage .mainComponent aside ul li{
+    margin-bottom: 3em
+}
+
+.practicasPage .mainComponent aside ul li.form input{
+    display: block;
+    border: solid 1px #B2BAFF;
+    padding: .7em;
+    width: calc(100% - 50px);
+    height: 50px
+}
+
+.practicasPage .mainComponent aside ul li.form span{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: #B00000;
+    justify-content: center;
+    align-items: center;
+}
+
+.practicasPage .mainComponent aside ul li figure img{
+    width:100%;
+}
+
+.practicasPage .mainComponent aside ul li.form .form-select{
+    display: block;
+    border: solid 1px #ffffff;
+    padding: .7em;
+    width: 100%;
+    height: 50px;
+    color: #B00000
+}
+
+/*.practicasPage .mainComponent aside>ul{
+    position: sticky;
+    top: 6em;
+}*/
+
+.practicasPage .mainComponent aside ul li h4{
+    font-size: 1.125em;
+    border-bottom: solid 1px #313A7D;
+    padding-bottom: .7em;
+    margin-bottom: .7em;
+}
+
+.practicasPage .mainComponent aside ul li.tags ul li{
+    margin-bottom: 1em;
+}
+
+.practicasPage .blogItems>ul{
+    padding: 0!important
+}
+
+.paginacion ul.flex{
+    justify-content: center!important
+}
+
+.paginacion ul.flex li{
+    width: inherit!important;
+    margin-bottom: 0!important
+}
+
+.paginacion ul.flex li>a,
+.paginacion ul.flex li>span{
+    height: 1.8em;
+    width: 1.8em;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    color: #313A7D;
+    margin: 0 .2em;
+}
+
+.paginacion ul.flex li>a:hover{
+    font-weight: 700;
+    box-shadow: 1px 1px 1px #313A7D;
+}
+
+.paginacion ul.flex li>a.square{
+    background-color: #ffffff;
+    border: solid 1px #313A7D;
+}
+
+.paginacion ul.flex li>a.active{
+    background-color: #313A7D;
+    color: #ffffff;
+}
+
+.paginacion{
+    margin-top: 4em
+}
+
+.practicasPage .mainComponent,
+.novedadesPage .mainComponent{
+    padding-top: 1em;
+    padding-bottom: 8em;
+}
+
+/*-Novedades-*/
+.mainComponent #novedades ul li:first-child{
+    width: 100%;
+}
+
+.mainComponent #novedades ul li>a{
+    display: block;
+}
+
+.mainComponent #novedades ul li:nth-child(3),
+.mainComponent #novedades ul li:nth-child(4){
+    margin-bottom: 2em;
+}
+
+.mainComponent #novedades ul li:nth-child(3)>a figure,
+.mainComponent #novedades ul li:nth-child(4)>a figure{
+    display: block;
+}
+
+#novedades ul li>a .enlacePlus{
+    margin-top: 2em;
+}
+
+#novedades .portal ul li{
+    margin-bottom: 2em;
+}
+
+.novedadesPage .backPortada{
+    background-image: url(../img/novedades-port.jpg)
+}
+
+footer{
+    padding-top: 0!important
+}
+
+/*---------------------------------------------MediaQueries---------------------------------------------*/
+
+/*-Tablet-*/
+@media(min-width: 48em){
+    .heading48{
+        font-size: 3em;
+    }
+    
+    .heading36{
+        font-size: 2.25em;
+    }
+    
+    .heading24{
+        font-size: 1.5em;
+    }
+    
+    .parrafo{
+        font-size: 1.125em;
+        line-height: 1.81em;
+    }
+    
+    article p{
+        font-size: 1.125em;
+        line-height: 1.81em;
+    }
+    
+    header .escudo img{
+        margin: auto;
+        width: 9em;
+    }
+    
+    #isologo{
+        width: 13em;
+    }
+    
+    #aniversario{
+        padding: 3em 1.875em;
+        background-color: #ffffff;
+    }
+    
+    /*-Welcome-*/
+    #welcome .niveles figure{
+        height: 30em;
+    }
+    
+    /*-Propuesta-*/
+    #propuesta .asignaturas ul{
+        flex-direction: row;
+    }
+    
+    #propuesta .asignaturas ul li{
+        width: 50%;
+    }
+    
+    /*-PracTICas-*/
+    #practicas .blogItems>ul{
+        padding: 0 1.875em;
+    }
+    
+    /*-Institucional-*/
+    .portadaPage {
+        padding-top: 10em;
+        padding-bottom: 2em;
+    }
+    
+    .institucional .backPortada{
+        background-image: url(../img/institucional.jpg);
+    }
+    
+    .migaPan{
+        margin: 0 1.875em 2em;
+        padding: 1em 0;
+    }
+    
+    .migaPan ul li a{
+        color: #313A7D;
+        display: block;
+    }
+    
+    article>section{
+        margin-top: 5em;
+    }
+    
+    .mainComponent{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .mainComponent article{
+        width: 65%;
+        padding-right: 2em;
+    }
+    
+    .mainComponent aside{
+        width: 33%;
+    }
+    
+    .institucionalSections{
+        margin-top: 0;
+        position: sticky;
+        top: 10em;
+    }
+    
+    .itemsAsignatura ul li{
+        flex-direction: row
+    }
+    
+    .itemsAsignatura ul li p{
+        padding-left: 2em;
+    }
+    
+    /*-Nivel Inicial-*/
+    .itemsInicial ul li figure{
+        width: 10em;
+        height: 10em;
+        padding: 1.5em;
+    }
+    
+    .itemsInicial ul li>div{
+        width: 80%;
+        padding-left: 3em
+    }
+    
+    
+    /*-PracTICas-*/
+    .practicasPage .mainComponent{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .practicasPage .mainComponent>#practicas{
+        width: 71%;
+    }
+    
+    .practicasPage .mainComponent>aside{
+        width: 23%;
+    }
+    
+    .practicasPage .mainComponent .blogItems ul{
+        flex-wrap: wrap;
+    }
+    
+    .practicasPage .mainComponent .blogItems ul li.items{
+        width: 100%!important;
+    }
+    
+    .paginacion ul.flex li>a,
+    .paginacion ul.flex li>span{
+        height: 2em;
+        width: 2em;
+        margin: 0 .5em;
+    }
+    
+    footer .datos img{
+        width: 16em;
+        margin-bottom: 2em;
+        margin-left: 0;
+    }
+    
+    footer .datos>div p{
+        text-align: left;
+    }
+    
+    footer{
+        padding-top: 3em
+    }
+    
+    .footerBox{
+        margin-bottom: 3em
+    }
+    
+}
+
+/*-Laptop-*/
+@media(min-width: 992px){
+    header{
+        padding: 0 2em;
+    }
+    
+    .navbar{
+        padding: 1em 2em;
+    }
+    
+    .headerBox ul{
+        flex-direction: row;
+        width: auto
+    }
+    
+    .headerBox nav{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    
+    header .escudo{
+        margin-top: 1.5em
+    }
+    
+    header .escudo img{
+        margin: 0;
+        margin-left: 2em;
+        width: 7em;
+    }
+    
+    .headerBox #logo{
+        margin-left: 9em;
+        width: 12em;
+    }
+    
+    .headerBox ul li a{
+        padding: .5rem 0;
+        margin: 0 .5em;
+    }
+    
+    .headerBox .navSuperior li a.nav-link{
+        padding: .5rem 0;
+        margin: 0 .5em 0;
+    }
+    
+    .portadaPage{
+        padding-top: 8em;
+        padding-bottom: 2em;
+    }
+    
+    main{
+        margin-top: 4em;
+    }
+    
+    .marginWidth{
+        padding: 0 1.875em;
+    }
+    
+    .blockFlex{
+        display: flex
+    }
+    
+    .seccionTitulo h2{
+        line-height: 43px;
+    }
+    
+    /*-Welcome-*/
+    #welcome .niveles>a{
+        width: 49%;
+    }
+    
+    #welcome .enlacePlus p{
+        max-width: inherit;
+    }
+    
+    /*-Propuesta-*/
+    #propuesta .asignaturas>ul li>a figure{
+        height: 27em;
+    }
+    
+    #propuesta .asignaturas>ul li{
+        width: 33.3%;
+    }
+    
+    #propuesta .asignaturas>ul li>a figure{
+        min-height: 25em;
+    }
+    
+    /*-PracTICas-*/
+    #practicas .blogItems>ul{
+        justify-content: space-between;
+        flex-direction: row;
+        margin: auto;
+    }
+    
+    .practicasPage #practicas .blogItems>ul{
+        max-width: 73em;
+    }
+    
+    #practicas .blogItems>ul li.items{
+        width: 31.85%;
+    }
+    
+    #practicas .blogItems>ul li.items figure{
+        max-height: 18em;
+        overflow: hidden;
+    }
+    
+    .carousel-item .slideTxt h1,
+    .carousel-item .slideTxt h2{
+        font-size: 4.125em;
+    }
+    
+    .carousel-item .slideTxt p{
+        font-size: 1.5em;
+        margin-top: 0
+    }
+    
+    #practicas{
+        padding: 6em 0 3em;
+    }
+    
+    /*-section Novedades-*/
+    #novedades .portal ul{
+        flex-direction: row;
+    }
+    
+    #novedades .portal ul li{
+        margin-bottom: 2m;
+        width: 32%;
+    }
+    
+    #novedades .portal ul li:first-child,
+    #novedades .portal ul li:nth-child(2){
+        width: 49%;
+        margin-bottom: 2em;
+    }
+    
+    #novedades .portal ul li>a{
+        flex-direction: row;
+    }
+    
+    #novedades .portal ul li>a figure{
+        width: 100%;
+        height: 21em;
+    }
+    
+    #novedades .verTodas{
+        padding-top: 2em;
+        padding-bottom: 6em
+    }
+    
+    #novedades .tituloNovedades{
+        display: flex;
+        margin-bottom: 3em;
+        margin-top: 6em;
+    }
+    
+    /*-Instituciones-*/
+    .owl-carousel{
+        display: none!important;
+    }
+    
+    .instList{
+        display: flex;
+        padding: 5em 0 4em;
+    }
+    
+    .instList ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .instList ul>div{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .instList ul>div:first-child{
+        margin-bottom: 1.5em
+    }
+    
+    .instList ul>div li{
+        margin: 0 1em 1.5em;
+        display: flex;
+        align-items: center
+    }
+    
+    .instList img{
+        max-height: 3.5em;
+        display: block;
+    }
+    
+    
+    /*-Footer-*/
+    footer{
+        padding-top: 3em!important;
+    }
+    
+    footer nav{
+        display: flex!important
+    }
+    
+    footer nav ul{
+        margin-left: 5em
+    }
+    
+    footer nav ul li a{
+        display: block;
+        margin-bottom: 1em;
+    }
+    
+    .itemsAsignatura ul li{
+        width: 44%;
+        margin-left: 3em;
+        padding: 1em 2em 1.5em;
+    }
+    
+    .itemsAsignatura ul li figure{
+        margin-left: -5em;
+        width: 12em;
+    }
+    
+    .itemsAsignatura ul li p{
+        padding-left: 2em;
+    }
+    
+    .informativo .txtArticle{
+        padding-top: 0;
+    }
+    
+    #practicas .blogItems>ul li.items .enlace{
+        margin-top: 2em
+    }
+    
+    /*-Nota-*/
+    .nota .migaPan ul{
+        justify-content: center;
+    }
+    
+    /*-PracTICas-*/
+    .practicasPage .mainComponent .blogItems ul li.items{
+        width: 46%!important;
+    }
+    
+    /*-Novedades-*/
+    .mainComponent #novedades ul li:first-child{
+        width: 100%;
+    }
+    
+    .mainComponent #novedades ul li:first-child>a{
+        display: flex
+    }
+    
+    .mainComponent #novedades ul li:first-child>a .titular{
+        padding: 3em 4em;
+    }
+    
+    .mainComponent #novedades ul li:nth-child(2),
+    .mainComponent #novedades ul li:nth-child(3),
+    .mainComponent #novedades ul li:nth-child(4){
+        width: 32%;
+    }
+    
+    
+    
+    .mainComponent #novedades .portal ul li:nth-child(1) a{
+        flex-direction: row;
+    }
+    
+    #novedades .portal ul li .titular .enlacePlus{
+        margin-top: auto;
+    }
+    
+    #novedades .portal ul li .titular h3{
+        margin-bottom: 2em;
+    }
+    
+    .mainComponent #novedades ul li>a figure{
+        min-height: 20em;
+    }
+    
+    .mainComponent #novedades ul li:first-child>a{
+        justify-content: space-between
+    }
+    
+    .mainComponent #novedades ul li:first-child>a figure{
+        width: 40%;
+        height: 100%;
+    }
+    
+    .mainComponent #novedades ul li:first-child>a .titular{
+        width: 60%
+    }
+    
+    #novedades .portal ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #novedades .portal ul li>a{
+        flex: 1
+    }
+    
+    #novedades .portal ul li .titular{
+        height: 100%;
+    }
+    
+    #novedades .portal ul li:nth-child(2) .titular,
+    #novedades .portal ul li:nth-child(3) .titular,
+    #novedades .portal ul li:nth-child(4) .titular{
+        height: inherit
+    }
+    
+    article h1{
+        margin-bottom: 1em
+    }
+    
+    article figure{
+        margin-bottom: 5em;
+    }
+    
+    .practicasPage article figure{
+        margin-bottom: 2em;
+    }
+    
+}
+
+@media(min-width: 1200px){
+    
+    .marginWidth{
+       /*- padding: 0 0em; -*/
+    }
+    
+    header .escudo img{
+        margin: auto;
+        width: 10em;
+    }
+    
+    .headerBox #logo{
+        margin-left: 0em;
+    }
+    
+    .nota .migaPan ul{
+        justify-content: flex-start;
+    }
+    
+    main{
+        margin-top: 7em
+    }
+    
+    .indexPage{
+        padding-bottom: 0!important
+    }
+    
+    .nota .mainComponent{
+        margin-top: 4em
+    }
+    
+    .itemsAsignatura ul li figure{
+        width: 14em;
+    }
+
+}
+
+@media(min-width: 1300px){
+    .headerBox li a.nav-link{
+        font-size: 1em;
+    }
+}
+
+/*-Desktop-*/
+@media(min-width: 93.75em){
+    .headerBox li a.nav-link{
+        font-size: 1.125em;
+    }
+    
+    .btn-top{
+        right: 4.3em;
+    }
+    
+    #propuesta .asignaturas ul li>a figure .propInfo p{
+        font-size: 1.125em;
+    }
+    
+    #aniversario{
+        padding: 3em 0;
+        background-color: #ffffff;
+    }
+    
+    .headerBox .navSuperior li a{
+        font-size: 1.125em;
+    }
+    
+    header .escudo img{
+        width: 11em;
+    }
+    
+    .instList img{
+        max-height: 5em;
+        max-width: 15em;
+        margin: auto auto;
+    }
+    
+    .instList ul>div li{
+        margin: 0 1.3em 2em;
+    }
+    
+    /*-Institucional-*/
+    .portadaPage{
+        padding-top: 11em;
+        padding-bottom: 2em;
+    }
+    
+    /*-Nota-*/
+    .nota .mainComponent {
+        margin-top: 7em;
+    }
+    
+}
